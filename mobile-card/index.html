@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+    <meta name="description" content="한솔 ❤️ 문경 결혼식에 초대합니다." />
+    <meta name="author" content="moon kyoung" />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <meta property="og:url" content="https://hansol-moonkyoung.github.io" />
+    <meta property="og:title" content="한솔 ❤️ 문경 결혼식에 초대합니다." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://hansol-moonkyoung.github.io/Wedding/3.jpg" />
+    <meta property="og:image:width" content="552" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:description" content="사랑으로 물들어가는 계절, 연인에서 부부라는 이름으로 평생을 함께 하고자 합니다." />
+    <meta name="format-detection" content="telephone=no" />
+    <title>한솔 ♡ 문경의 모바일 청첩장</title>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <link href="css/cover.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=09d101839e321e19b0d1883c63364401"></script>
+
+    <link href="css/gallery.css" rel="stylesheet" />
+    <!-- PhotoSwipe -->
+    <link rel="stylesheet" href="css/photoswipe.css" />
+    <link rel="stylesheet" href="css/default-skin.css" />
+
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.css' integrity='sha512-h1rwF0uB6r2IuEZcyjPrR53bBKN9Wb4yL+w3Rdlzmc3CkBF1gMSFvQIIstnu4bEtYDaKca5ke5S8UBAACRImyg==' crossorigin='anonymous'/> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/cjs/popper.js' integrity='sha512-gEoe6YLb4ncJaTn8TjU8JuxEexnbeFyZ3MQbi0uyxd+MtmAGsEJ6wNrFsYJJ+nBS2zKM6C1vkrTuq9nRxO6twQ==' crossorigin='anonymous'></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> -->
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.js"
+        integrity="sha512-ePtegHW811NTnZd0Er1UxtBb8dizKEdSzANYy/UhxM40FC2yCWwb1CQrj03BPbrs6XdUkcHuyVn9Xq9q0Lm34g=="
+        crossorigin="anonymous"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: "wow", // animated element css class (default is wow)
+            animateClass: "animated", // animation css class (default is animated)
+            offset: 80, // distance to the element when triggering the animation (default is 0)
+            mobile: true, // trigger animations on mobile devices (default is true)
+            live: true, // act on asynchronously loaded content (default is true)
+            scrollContainer: null, // optional scroll container selector, otherwise use window,
+            resetAnimation: true, // reset animation on end (default is true)
+        });
+
+
+        $(document).ready(function () {
+            //let date = new Date(2022, 9, 25);
+            let date = new Date("2023-03-19T00:00:00+0900");
+            let currentDate = new Date();
+            // debugger
+            // let result = date - currentDate;
+
+            // let misec = 24 * 60 * 60 * 1000;
+
+            // result = result <= 0 ? 0 : parseInt(result / misec) + 1;
+
+            var distance = date.getTime() - currentDate.getTime()
+            result = Math.floor(distance/(1000*60*60*24));
+
+            $("#d-day").html(result);
+
+            wow.init();
+            initWeddingPhoto();
+            kakaoMap();
+
+
+        });
+
+
+        function kakaoMap() {
+
+            var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+                mapOption = {
+                    center: new kakao.maps.LatLng(
+                        37.4818244545435,
+                        126.79821796093711
+                    ), // 지도의 중심좌표
+                    level: 3, // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+            var markerPosition = new kakao.maps.LatLng(
+                37.4818244545435,
+                126.79821796093711
+            );
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition,
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+            // map.setDraggable(false);
+            // map.setZoomable(false)
+        }
+
+        function initWeddingPhoto() {
+            var images = document.querySelectorAll('img[loading]');
+            console.log('ddd')
+            for (var i = 0; i < images.length; i++) {
+                if (images[i].complete) {
+                    images[i].classList.add('is-loaded');
+                } else {
+                    images[i].addEventListener(
+                        'load',
+                        function () {
+                            this.classList.add('is-loaded');
+                        },
+                        false
+                    );
+                }
+            }
+        }
+
+
+        function copy_number(id) {
+            // alert(id);
+
+            var isIOS = false;
+
+            if (navigator.userAgent.match(/i(Phone|Pod)/i) != null) {
+                //아이폰일 경우
+                var obj = document.getElementById("accnum" + id);
+                var tmpTextarea = document.createElement("textarea");
+                // tmpTextarea.value = obj.childNodes[1].textContent;
+                tmpTextarea.value = id;
+
+                document.body.appendChild(tmpTextarea);
+                tmpTextarea.select();
+                tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
+                document.execCommand("copy");
+                document.body.removeChild(tmpTextarea);
+            } else {
+                //안드로이드 경우
+                // var obj = document.getElementById("accnum" + id);
+                // var range = document.createRange();
+                // //텍스트 정보를 Range 객체에 저장
+                // range.selectNode(obj.childNodes[1]); //텍스트 정보를 Range 객체에 저장
+                // var sel = window.getSelection();
+                // sel.removeAllRanges(); //기존 선택정보 삭제
+                // sel.addRange(range); //텍스트 정보 선택
+                // document.execCommand("copy"); //복사
+                // sel.removeRange(range); //선택 정보 삭제
+
+                var obj = document.getElementById("accnum" + id);
+                var tmpTextarea = document.createElement("textarea");
+                // tmpTextarea.value = obj.childNodes[1].textContent;
+                tmpTextarea.value = id;
+                document.body.appendChild(tmpTextarea);
+                tmpTextarea.select();
+                tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
+                document.execCommand("copy");
+                document.body.removeChild(tmpTextarea);
+            }
+            // 복사 알림
+            alert("복사되었습니다.");
+        }
+
+    </script>
+
+
+</head>
+
+<body class="text-center">
+    <div class="top-div">
+        <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <div class="cover-heading" >
+                <p class="wow fadeIn top-title-custom text-center">한솔 & 문경</p>
+                <p class="wow fadeIn top-title-custom text-center">저희 결혼합니다</p>
+            </div>
+
+        </header>
+        <main role="main" class="inner">
+            <div class="wow fadeInUp">
+
+                <br /><br /><br />
+                <p class="top-title-sub-custom">2023년 3월 18일 토요일 오후 3시 30분</p>
+                <p class="top-title-sub-custom">헤리츠컨벤션 2층 아그니스홀</p>
+                <br /><br /><br />
+                <hr class="cover-container" />
+                <br />
+                <br /><br />
+            </div>
+            <div class="wow fadeInUp">
+                <p class="section1-title section1-main-custom">
+                    마음을 같이하여<br />
+                    같은 사랑을 가지고<br />
+                    뜻을 합하며 한마음을 품어<br />
+                    <span class="small">- 빌립보서 2장 2절 -</span>
+                </p>
+                <br />
+            </div>
+            <div class="wow fadeInUp">
+                <p class="section1-title section1-sub-custom">
+                    "이제 서로, 평생 함께"
+                </p>
+                <br />
+            </div>
+            <div class="wow fadeInUp">
+                <p class="section1-title section1-sub-custom">
+                    서로가 마주보며 다져온 사랑을<br />
+                이제 함께 한 곳을 바라보며<br />
+                걸어갈 수 있는 큰 사랑으로<br />
+                평생을 함께 하고자 합니다.<br />
+                귀한 걸음 하시어<br />
+                두 사람의 언약을 지켜봐 주시면<br />
+                더 없는 기쁨으로 간직하겠습니다.
+                </p>
+                <br />
+            </div>
+            <div class="wow fadeInUp">
+                <div class="section1-title section1-sub2-custom">
+                    <p class="section1-sub2-name"><span class="small">윤상옥 유근자 의 &nbsp장남&nbsp&nbsp</span>한솔</p>
+                    <p class="section1-sub2-name"><span class="small">장병전 김정아 의 &nbsp장녀&nbsp&nbsp</span>문경</p>
+                </div>
+                <br /><br />
+            </div>
+
+
+            <hr class="cover-container" /><br />
+            <p class="wow fadeInUp section3-title section3-main">소중한 날들</p>
+            <div class="ww-section bg-pinktone" id="gallery">
+                <div class="ww-photo-gallery pb-5">
+                    <div class="container">
+                        <div class="ww-gallery">
+                            <div class="card-columns">
+                                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="pswp__bg"></div>
+
+                                    <div class="pswp__scroll-wrap">
+                                        <div class="pswp__container">
+                                            <div class="pswp__item"></div>
+                                            <div class="pswp__item"></div>
+                                            <div class="pswp__item"></div>
+                                        </div>
+
+                                        <div class="pswp__ui pswp__ui--hidden">
+                                            <div class="pswp__top-bar">
+                                                <div class="pswp__counter"></div>
+
+                                                <button class="pswp__button pswp__button--close"
+                                                    title="Close (Esc)"></button>
+
+                                                <button class="pswp__button pswp__button--zoom"
+                                                    title="Zoom in/out"></button>
+
+                                                <div class="pswp__preloader">
+                                                    <div class="pswp__preloader__icn">
+                                                        <div class="pswp__preloader__cut">
+                                                            <div class="pswp__preloader__donut"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                                <div class="pswp__share-tooltip"></div>
+                                            </div>
+
+                                            <button class="pswp__button pswp__button--arrow--left"
+                                                title="Previous (arrow left)"></button>
+
+                                            <button class="pswp__button pswp__button--arrow--right"
+                                                title="Next (arrow right)"></button>
+
+                                            <div class="pswp__caption">
+                                                <div class="pswp__caption__center"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="gallery-wrapper">
+                                <div class="gallery" data-is-empty="false" data-columns="3">
+                                    <figure class="gallery__item gallery__item--11">
+                                        <a href="img/mobile_pick/6.jpg" data-size="1153x769">
+                                            <img loading="lazy" src="img/mobile_pick/6.jpg" alt="gallery1" width="1153" height="769" />
+                                        </a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--1D">
+                                        <a href="img/mobile_pick/2.jpg" data-size="1153x769"><img loading="lazy"
+                                                src="img/mobile_pick/2.jpg" alt="gallery4" width="1153"
+                                                height="769" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--7D">
+                                        <a href="img/mobile_pick/3.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/3.jpg" alt="gallery4" width="769"
+                                                height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--D1">
+                                        <a href="img/mobile_pick/5.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/5.jpg" alt="2x2" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--D8">
+                                        <a href="img/mobile_pick/4.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/4.jpg" alt="2x2" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--HD">
+                                        <a href="img/mobile_pick/15.jpg" data-size="1153x769"><img loading="lazy"
+                                                src="img/mobile_pick/15.jpg" alt="2x2" width="1153" height="769" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--R1">
+                                        <a href="img/mobile_pick/14.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/14.jpg" alt="2x2" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--L8">
+                                        <a href="img/mobile_pick/12.jpg" data-size="1153x769"><img loading="lazy"
+                                                src="img/mobile_pick/12.jpg" alt="2x2" width="1153" height="769" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--Z1">
+                                        <a href="img/mobile_pick/11.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/11.jpg" alt="2x2" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--Y8">
+                                        <a href="img/mobile_pick/10.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/10.jpg" alt="2x2" width="768" height="11533" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--YE">
+                                        <a href="img/mobile_pick/9.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/9.jpg" alt="2x2" width="769" height="1153" /></a>
+                                    </figure>
+
+
+                                    <figure class="gallery__item gallery__item--Z2">
+                                        <a href="img/mobile_pick/20.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/20.jpg" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--Z3">
+                                        <a href="img/mobile_pick/19.jpg" data-size="769x1153"><img loading="lazy"
+                                                src="img/mobile_pick/19.jpg" width="769" height="1153" /></a>
+                                    </figure>
+
+                                    <figure class="gallery__item gallery__item--L2">
+                                        <a href="img/mobile_pick/7.jpg" data-size="1153x769"><img loading="lazy"
+                                                src="img/mobile_pick/7.jpg" width="1153" height="769" /></a>
+                                    </figure>
+
+                                </div>
+                            </div>
+
+                            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="pswp__bg"></div>
+                                <div class="pswp__scroll-wrap">
+                                    <div class="pswp__container">
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                    </div>
+                                    <div class="pswp__ui pswp__ui--hidden">
+                                        <div class="pswp__top-bar">
+                                            <div class="pswp__counter"></div>
+                                            <button class="pswp__button pswp__button--close"
+                                                title="Close (Esc)"></button><button
+                                                class="pswp__button pswp__button--share" title="Share"></button><button
+                                                class="pswp__button pswp__button--fs"
+                                                title="Toggle fullscreen"></button><button
+                                                class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                                            <div class="pswp__preloader">
+                                                <div class="pswp__preloader__icn">
+                                                    <div class="pswp__preloader__cut">
+                                                        <div class="pswp__preloader__donut"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                            <div class="pswp__share-tooltip"></div>
+                                        </div>
+                                        <button class="pswp__button pswp__button--arrow--left"
+                                            title="Previous (arrow left)"></button><button
+                                            class="pswp__button pswp__button--arrow--right"
+                                            title="Next (arrow right)"></button>
+                                        <div class="pswp__caption">
+                                            <div class="pswp__caption__center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="cover-container" />
+
+            <div class="">
+                <br /><br /><br />
+                <div class="wow fadeInUp container section4-title">
+                    <div class="row">
+                        <div class="col-8 section4-sec1-2">
+                            <span class="section4-sec1-custom"><img class="icon-profile" src="img/icon/mcard_gr.png" />신랑에게 축하인사</span>
+                        </div>
+                        <div class="col-4 section4-sec1-3">
+                            <button onclick="document.location.href='tel:010-2035-0969'" class="section4-sec3">
+                                <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                            </button>
+                            <button onclick="document.location.href='sms:010-2035-0969'" class="section4-sec3">
+                                <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                            </button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-8 section4-sec1-2">
+                            <span class="section4-sec1-custom"><img class="icon-profile" src="img/icon/mcard_br.png" />신부에게 축하인사</span>
+                        </div>
+                        <div class="col-4 section4-sec1-3">
+                            <button onclick="document.location.href='tel:010-7272-3471'" class="section4-sec3">
+                                <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                            </button>
+                            <button onclick="document.location.href='sms:010-7272-3471'" class="section4-sec3">
+                                <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br /><br /><br />
+
+                <div class="wow fadeInUp section4-subtitle">혼주에게 전화하기</div><br />
+                <div class="wow fadeInUp container section4-title">
+                    <div class="row" style="margin-top: 1rem; margin-bottom: 1rem">
+                        <div class="col-6 section4-sec1-2">
+                            <span class="section4-sec1-custom">신랑측 혼주</span>
+                        </div>
+                        <div class="col section4-sec1-2">
+                            <span class="section4-sec1-custom">신부측 혼주</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 section4-sec2">
+                            <div class="section4-sec2-row">
+                                <span class="section4-sec2-custom">아버지 윤상옥</span>
+                                <button onclick="document.location.href='tel:010-8685-0010'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                                </button>
+                                <button onclick="document.location.href='sms:010-8685-0010'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                                </button>
+                            </div>
+                            <div class="section4-sec2-row">
+                                <span class="section4-sec2-custom">어머니 유근자</span>
+                                <button onclick="document.location.href='tel:010-8830-3697'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                                </button>
+                                <button onclick="document.location.href='sms:010-8830-3697'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 section4-sec2">
+                            <div class="section4-sec2-row">
+                                <span class="section4-sec2-custom">아버지 장병전</span>
+                                <button onclick="document.location.href='tel:010-8290-8259'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                                </button>
+                                <button onclick="document.location.href='sms:010-8290-8259'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                                </button>
+                            </div>
+                            <div class="section4-sec2-row">
+                                <span class="section4-sec2-custom">어머니 김정아</span>
+                                <button onclick="document.location.href='tel:010-9606-6071'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/call_1.png" />
+                                </button>
+                                <button onclick="document.location.href='sms:010-9606-6071'" class="section4-sec2-2">
+                                    <img class="bi bi-telephone-fill" src="img/icon/sms_1.png" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </div>
+            <hr class="cover-container" />
+
+            <div class="wow fadeInUp section7 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <br /><br />
+                <p class="wow fadeInUp section7-title section7-main">
+                    "참석이 어려우신 분들은<br />
+                    축하의 마음을 전해주세요"
+                </p>
+                <br />
+                <!-- Button trigger modal -->
+                <button type="button" class="wow fadeInUp btn section7-button" data-toggle="modal" data-target="#groom">
+                    <img src="img/icon/groom.png" class="icon-wedding" width="20px"/>신랑 • 혼주측 계좌번호 보기
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="groom" tabindex="-1" aria-labelledby="groom" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title section7-modal section7-modal-title" id="groomLabel">
+                                    신랑 • 혼주측 계좌번호 보기
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body section7-modal section7-modal-content">
+                                <p class="accountFont">신 랑</p>
+                                <img src="img/icon/mcard_gr.png" width="25px"/>&nbsp;&nbsp;
+                                국민 <span id="groomAccountNum">73310201074784</span> 김한솔
+                                <button type="button" class="account_copy" data-clipboard-target="#groomAccountNum">
+                                    복사
+                                </button>
+                                <br />
+                                <hr />
+                                <p class="accountFont">신랑측 혼주</p>
+                                <div>
+                                    <img src="img/icon/family.png" width="40px" height="40px" />&nbsp;&nbsp;
+                                국민 <span id="groomParentMomAccountNum">801-24-0490-402</span>&nbsp;&nbsp;윤상옥
+                                <button type="button" id="accnum801240490402" class="account_copy"
+                                    data-clipboard-target="#groomParentMomAccountNum">
+                                    복사
+                                </button>
+                                </div>
+                                <br />
+                                <div>
+                                    <img src="img/icon/family.png" width="40px" height="40px" />&nbsp;&nbsp;
+                                    국민 <span id="groomParentMomAccountNum">453201-04-014884</span>&nbsp;&nbsp;유근자
+                                    <button type="button" id="accnum45320104014884" class="account_copy"
+                                        data-clipboard-target="#groomParentMomAccountNum">
+                                        복사
+                                    </button>
+                                </div>
+
+                            </div><br />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="wow fadeInUp btn section7-button" data-toggle="modal" data-target="#bride">
+                    <img src="img/icon/bride.png" class="icon-wedding" width="20px"/>신부 • 혼주측 계좌번호 보기
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="bride" tabindex="-1" aria-labelledby="bride" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title section7-modal section7-modal-title" id="brideLabel">
+                                    신부 • 혼주측 계좌번호 보기
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body section7-modal section7-modal-content">
+                                <p class="accountFont">신 부</p>
+                                <img src="img/icon/mcard_br.png" width="25px" />&nbsp;&nbsp;
+
+                                우리 <span id="brideAccountNum">1002-184-920225</span>&nbsp;&nbsp;장문경
+                                <button type="button" class="account_copy" data-clipboard-target="#brideAccountNum">
+                                    복사
+                                </button>
+                                <br />
+                                <hr />
+                                <p class="accountFont">신부측 혼주</p>
+                                <div>
+                                    <img src="img/icon/family.png" width="40px" height="40px" />&nbsp;&nbsp;
+
+                                    국민 <span id="brideParentAccountNum">015-24-0198-819</span>&nbsp;&nbsp;장병전
+                                    <button type="button" class="account_copy"
+                                        data-clipboard-target="#brideParentAccountNum">
+                                        복사
+                                    </button>
+                                </div>
+                                <br />
+                                <div>
+                                    <img src="img/icon/family.png" width="40px" height="40px" />&nbsp;&nbsp;
+                                    우리 <span id="brideParentAccountNum">594-201214-02-004</span>&nbsp;&nbsp;김정아
+                                    <button type="button" class="account_copy"
+                                        data-clipboard-target="#brideParentAccountNum">
+                                        복사
+                                    </button>
+                                </div>
+                            </div><br />
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+            </div>
+
+            <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <p class="section5-title section5-main-custom">
+                    <strong class="month">3</strong>
+                    <span class="month-en">March.</span><br>
+                    <span class="text">We are getting married.</span><br>
+                    <span class="text-weddingday">2023년 3월 18일 · 토요일 · 오후 3시 30분</span>
+                </p>
+                <table class="wow fadeInUp section5-title section5-table 3month">
+                    <tr>
+                        <td class="sun">S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="sun"><span>1</span></td>
+                        <td><span>2</span></td>
+                        <td><span>3</span></td>
+                        <td><span>4</span></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><span>5</span></td>
+                        <td><span>6</span></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><span>10</span></td>
+                        <td><span>11</span></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td><span>14</span></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                        <td ><span class="check">18</span></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td><span>21</span></td>
+                        <td><span>22</span></td>
+                        <td><span>23</span></td>
+                        <td><span>24</span></td>
+                        <td><span>25</span></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td><span>29</span></td>
+                        <td><span>30</span></td>
+                        <td><span>31</span></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p class="wow fadeInUp section5-title-custom section5-sub-custom" style="margin-top: 2rem">
+                    한솔 ❤️ 문경 결혼식이 <span id="d-day"></span>일 남았습니다.
+                </p>
+            </div>
+
+            <div class="wow fadeInUp inner cover-container d-flex w-100 h-100 mx-auto flex-column">
+                <br />
+                <p class="wow fadeInUp section6-title section6-main">오시는길</p>
+                <div class="wow fadeInUp section6-title">
+                    <p class="section6-location-main" style="margin-bottom: 0">
+                        헤리츠컨벤션 2층 아그니스홀
+                    </p>
+                    <p class="section6-location-sub" style="text-align: center">
+                        서울 강남구 논현로 662
+                    </p>
+                </div>
+                <br />
+                <!-- 지도 -->
+                <div id="map" class="wow fadeInUp" style="width: 100%; height: 350px"></div>
+                <br />
+
+
+                <div class="wow fadeInUp section6-location p-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="section6-location section6-location-main btn btn-block collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        지하철 이용시 - 길찾기
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body section6-location-sub"><br />
+                                    <a href="https://m.search.naver.com/search.naver?where=m&query=%EB%B9%A0%EB%A5%B8%EA%B8%B8%EC%B0%BE%EA%B8%B0&nso_path=placeType%5Eplace;name%5E;address%5E;latitude%5E;longitude%5E;code%5E%7Ctype%5Eplace;name%5E%EC%BB%A8%EB%B2%A4%EC%85%98%ED%97%A4%EB%A6%AC%EC%B8%A0;address%5E;code%5E37537597;longitude%5E126.7984948;latitude%5E37.4818021%7Cobjtype%5Epath;by%5Epubtrans#map_quickPathSelect">
+                                        <img  class="icon-naver" src="img/icon/location_navermap.jpg">
+                                        Naver 빠른길 찾기
+                                    </a><br />
+                                    <p>(아이콘을 클릭해주세요!)</p><br />
+                                    지하철 7호선 학동역 3번 출구 도보 60m<br/>
+                                    지하철 9호선 언주역 3번 출구 도보 500m<br /><br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="section6-location section6-location-main btn btn-block collapsed"
+                                        type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        자동차 이용시 - 길찾기
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <br />
+                                <div class="card-body section6-location-sub searchMap">
+
+                                    <a href="https://surl.tmap.co.kr/dcceb67f" onclick="TMAP.send('%EC%B6%A9%EB%82%A8%20%EC%B2%9C%EC%95%88%EC%8B%9C%20%EC%84%9C%EB%B6%81%EA%B5%AC%20%EC%B2%9C%EC%95%88%EB%8C%80%EB%A1%9C%201198-30%20%EB%B9%84%EB%A0%8C%ED%8B%B0%EC%9B%A8%EB%94%A9%ED%99%80');" class="ui-link">
+                                        <div class="change-area" id="img_tmap_prev" change-data="img">                                                                                                   <input type="hidden" value="img_tmap" name="addition_key[]">
+                                            <input type="hidden" value="17605" name="addition_value[]">
+                                            <img id="img_tmap_prev_img" class="icon-tmap" src="img/icon/location_tmap.jpg">
+                                        </div>
+                                        Tmap 경로 찾기
+                                    </a>
+                                    <br />
+                                    <p>(아이콘을 클릭해주세요!)</p>
+                                    <br />
+                                    <p class="searchInfo">안전운전 하시고 조심히 와주세요 </p>
+                                    <p class="searchInfo">감사하는 마음으로 반갑게 </p>
+                                    <p class="searchInfo">맞이할 준비가 되었습니다 :) </p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+            </div>
+            <footer class="pt-5 text-muted text-center text-small section8">
+                <p class="mb-1">© 2023-03-18 Hansol, Moonkyoung</p>
+                <br /><br />
+            </footer>
+        </main>
+    </div>
+    <script>
+
+        var clipboard = new ClipboardJS('.account_copy');
+        clipboard.on('success', function () {
+            alert('복사되었습니다.');
+        });
+        clipboard.on('error', function () {
+            alert('Fail');
+        });
+
+    </script>
+
+
+
+
+    <script defer="defer" src="js/photoswipe.min.js"></script>
+    <script defer="defer" src="js/photoswipe-ui-default.min.js"></script>
+    <script defer="defer" src="js/gallery.js"></script>
+</body>
+
+</html>

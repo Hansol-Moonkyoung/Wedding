@@ -1,0 +1,822 @@
+/*
+ * Globals
+ */
+
+@font-face {
+  font-family: "NanumMyeongjo-r";
+  src: url("../font/NanumMyeongjo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumMyeongjo-e";
+  src: url("../font/NanumMyeongjo-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumMyeongjo-b";
+  src: url("../font/NanumMyeongjo-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DancingScript-b";
+  src: url("../font/DancingScript-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KyoboHandwriting2020pdy";
+  src: url("../font/KyoboHandwriting2020pdy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KimNamyun";
+  src: url("../font/KimNamyun.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cafe24Oneprettynight";
+  src: url("../font/Cafe24Oneprettynight.ttf") format("truetype");
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+p, span {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: none;
+  border: none;
+  box-shadow:none!important;
+  transition: none!important;
+}
+button:active,button:focus,button:hover {
+  outline: none;
+  border: none;
+  box-shadow:none!important;
+  transition: none!important;
+}
+.text-center {
+text-align: center!important;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
+
+.top-title {
+  margin: 1rem 0 2rem;
+  color: #333;
+  text-shadow: none;
+  font-family: KimNamyun;
+  font-size: 1.5rem;
+}
+.top-title-custom {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  text-align: center;
+  font-family: KimNamyun;
+  font-size: 2.2rem;
+}
+
+.top-title-sub {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+  font-family: KimNamyun;
+  font-size: 1.2rem;
+}
+
+.top-title-sub-custom {
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-shadow: none;
+  font-family: KimNamyun;
+  font-size: 1.5rem;
+}
+
+.top-title-sub-cafe-custom {
+  margin-top: 0.5em;
+  color: #333;
+  text-shadow: none;
+  font-family: Cafe24Oneprettynight;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.cover-container-2 {
+  max-width: 42em;
+  color: black;
+}
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.cover-heading {
+  margin-top: 6.5rem;
+  color: #fefefe;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: NanumMyeongjo-b;
+}
+.cover-heading .top-title-custom{
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.top-div {
+  width: 100%;
+  position: relative;
+
+}
+header {
+  position: relative;
+}
+header::before{
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    content: '';
+    background: url(../img/icon/visual_02.png)no-repeat bottom;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    transform: skewY(-15deg);
+}
+
+header {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * section
+ */
+.section1-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+  font-size: 1rem;
+}
+
+.section1-main {
+  background-color: #fefefe;
+  font-family: NanumMyeongjo-r;
+  line-height: 2em;
+  font-size: 1.2rem;
+}
+.section1-main-custom {
+  background-color: #fefefe;
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+.section1-main-custom .small {
+  font-size: 1.0rem;
+  font-weight: normal;
+}
+.section1-sub {
+  font-family: NanumMyeongjo-b;
+  line-height: 2.1em;
+  font-size: 1.35rem;
+}
+
+.section1-sub2 {
+  font-family: NanumMyeongjo-b;
+  line-height: 2.1em;
+  font-size: 1.35rem;
+}
+
+.section1-sub-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.section1-sub2-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 2.1em;
+  font-size: 1.55rem;
+  /* font-weight: bold; */
+}
+.section1-sub2-custom .section1-sub2-name {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+  text-align: center;
+  /* font-weight: bold; */
+}
+.section1-sub2-custom .small {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.section1-sub2 .small {
+  font-size: 1.2rem;
+}
+
+.section2-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section2-main {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  position: relative;
+}
+.section2-main-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  position: relative;
+}
+.section2-main-custom::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../img/section2.jpg");
+  background-size: cover;
+  background-position: right;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section2-main::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../img/section2.jpg");
+  background-size: cover;
+  background-position: right;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section2-sub {
+  font-family: NanumMyeongjo-b;
+  line-height: 2em;
+  font-size: 1.2rem;
+}
+.section2-sub-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 2em;
+  font-size: 1.2rem;
+}
+
+.section3 {
+  background-color: #f9f9f9;
+}
+
+.section3-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section3-main {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.8rem;
+}
+
+.section3-image {
+  box-shadow: 2px 2px 5px #999;
+}
+
+.section4-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section4-sec1-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.1rem;
+}
+.section4-sec1-2.col-8 {
+  padding-right: 0;
+}
+.section4-sec1-3.col-4 {
+  padding-left:0;
+}
+.section4-sec1-3 button + button {
+  margin-left:0.5rem;
+}
+.section4-sec1 {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section4-subtitle {
+  font-family: KimNamyun;
+  padding: 1rem 0;
+  width: 100%;
+  background: #c1cddf;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+.section4-sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section4-sec2.col-6 {
+padding:0;
+}
+.section4-sec2-row + .section4-sec2-row {margin-top: 0.8rem;}
+.section4-sec2-custom {
+  margin-right: 1rem;
+  font-family: Cafe24Oneprettynight;
+  font-size: 1.1rem;
+}
+.section4-sec2-2 {
+  padding:0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.section4-sec2-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section4-sec2 button + button {
+  margin-left:0.5rem;
+}
+.section4-sec3 {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  /* color: #55cccc; */
+  padding:0;
+  width: 2.8rem;
+  height: 2.8rem;
+  vertical-align: middle;
+}
+.section4-sec3 img{
+  width: 100%;
+  height: 100%;
+}
+
+.section4-sec1-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+.section4-sec1-custom .icon-profile{
+  width:1rem;
+  height: auto;
+  margin-right: 0.8rem;
+}
+
+
+.section4-sec3-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  color: #55cccc;
+}
+
+.section4-sec3-g-custom {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  color: #ff99cc;
+}
+
+.section5.cover-container {
+  padding: 3rem 1rem!important;
+  background-color: #f9f9f9;
+}
+
+.section5-title {
+  color: #333;
+  text-shadow: none;
+}
+
+.section5-title-custom {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section5-main-custom {
+  text-align: left;
+  font-family: Cafe24Oneprettynight;
+  margin: 0;
+  padding: 0 1rem 2rem;
+}
+.section5-main-custom .month {
+  font-size: 4rem;
+}
+
+.section5-main-custom .month-en {
+  font-size: 1.3rem;
+}
+.section5-main-custom .text {
+font-size: 1.1rem;
+}
+.section5-main-custom .text-weddingday {
+  font-family: KimNamyun;
+  font-size: 1.3rem;
+}
+
+
+.section5-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section5-sub-custom {
+  margin-bottom: 2rem;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+  font-family: Cafe24Oneprettynight;
+}
+
+.section5-table {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.section5-table tr td {
+  /* padding: 0.8rem; */
+}
+.section5-table tr td span {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section5-table tr .sun {
+  color: red;
+}
+
+.section5-table tr .check {
+  position: relative;
+  /* color: white; */
+  color: #000;
+  /* background-color: chocolate; */
+  /* border-radius: 50px; */
+  font-weight: bold;
+  /* width: 18%;
+  height: 18%; */
+}
+.section5-table tr .check::before{
+  position: absolute;
+  top:-10px;
+  left:0;
+  right:0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content:'';
+  background:url("../img/icon/ring.png")no-repeat 50% ;
+  background-size: contain;
+  text-align: center;
+}
+.section5-table tr .check::after{
+  position: absolute;
+  bottom:-6px;
+  left:0;
+  right:0;
+  display: block;
+  content:'PM 15:30';
+  color: gray;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+}
+
+
+.section5-table tr:first-child td {
+  padding-top: 2em;
+}
+
+.section5-table tr:last-child td {
+  padding-bottom: 2em;
+}
+
+.section6-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section6-location {
+  color: #333;
+  text-shadow: none;
+}
+
+.section6-main {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 2rem;
+}
+
+.section6-location-main {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section6-sub {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section6-location-sub {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.section7 {
+  background-color: #ffffff;
+}
+
+.section7-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section7-modal {
+  color: #333;
+}
+
+.section7-modal-title {
+  font-family: KimNamyun;
+
+  font-size: 1.4rem;
+}
+
+.section7-modal-content {
+  font-family: Cafe24Oneprettynight;
+
+  font-size: 1.2rem;
+}
+
+.section7-main {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.4em;
+  font-size: 1.3rem;
+}
+.section7-main {
+  font-family: Cafe24Oneprettynight;
+  line-height: 1.4em;
+  font-size: 1.4rem;
+}
+
+.section7-button {
+  font-family: KimNamyun;
+  font-size: 1.2rem!important;
+  /* background: #cc9999 !important; */
+  background: #c1cddf !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 50px !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+  margin-bottom: 0.7em !important;
+
+}
+.section7-button .icon-wedding {
+  margin: 0 0.5rem 0.2rem 0;
+}
+
+.section7-button:hover {
+  background-color: #cc9999;
+  color: #fff;
+  border: 0;
+}
+
+.section7-button:active {
+  background-color: #996666;
+  color: #fff;
+  border: 0;
+}
+
+.section7-button:valid {
+  background-color: #cc9999;
+  color: #fff;
+  border: 0;
+}
+
+.section8 {
+  background-color: #f9f9f9;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+hr.cover-container{
+  position:relative;
+}
+hr.cover-container::after{
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right:0;
+  display: block;
+  content: '';
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url("../img/icon/leaf.png");
+  background-size: 120px 41px;
+}
+
+.accountFont{
+  /* font-weight: bold; */
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+.account_copy{
+  margin-left: 0.5rem;
+  margin-bottom: 0.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #c4cedd;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.searchMap{
+  text-align: center;
+}
+.searchInfo{
+  margin-bottom: 0.5px;
+}
+.card-body {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.card-body a {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.card-body p {
+  margin-bottom: 0;
+  color: #999;
+  font-size: 1rem;
+}
+.card-body p.searchInfo {
+  color: #000;
+  font-size: 1.1rem;
+}
+.icon-naver{
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.icon-tmap {
+  width: 5rem;
+  height: 5rem;
+}
