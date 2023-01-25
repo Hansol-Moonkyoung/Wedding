@@ -38,10 +38,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
-button:active,button:focus,button:hover {
-  outline: none;
-  border:none;
-}
+
 p, span {
   margin: 0;
   padding: 0;
@@ -49,6 +46,14 @@ p, span {
 button {
   background: none;
   border: none;
+  box-shadow:none!important;
+  transition: none!important;
+}
+button:active,button:focus,button:hover {
+  outline: none;
+  border: none;
+  box-shadow:none!important;
+  transition: none!important;
 }
 .text-center {
 text-align: center!important;
@@ -263,7 +268,7 @@ header {
 .section1-main-custom {
   background-color: #fefefe;
   font-family: Cafe24Oneprettynight;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 1.2rem;
 }
 .section1-main-custom .small {
@@ -284,7 +289,7 @@ header {
 
 .section1-sub-custom {
   font-family: Cafe24Oneprettynight;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 1.2rem;
 }
 
@@ -295,10 +300,10 @@ header {
   /* font-weight: bold; */
 }
 .section1-sub2-custom .section1-sub2-name {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   line-height: 1.5;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .section1-sub2-custom .small {
   font-size: 1.2rem;
