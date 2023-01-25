@@ -298,10 +298,11 @@ header {
   margin-bottom: 1rem;
   line-height: 1.5;
   text-align: center;
+  font-weight: bold;
 }
 .section1-sub2-custom .small {
   font-size: 1.2rem;
-  /* font-weight: bold; */
+  font-weight: normal;
 }
 
 .section1-sub2 .small {
@@ -436,6 +437,8 @@ padding:0;
 .section4-sec2-row + .section4-sec2-row {margin-top: 0.8rem;}
 .section4-sec2-custom {
   margin-right: 1rem;
+  font-family: Cafe24Oneprettynight;
+  font-size: 1.1rem;
 }
 .section4-sec2-2 {
   padding:0;
@@ -470,7 +473,7 @@ padding:0;
 .section4-sec1-custom {
   font-family: Cafe24Oneprettynight;
   line-height: 1.5em;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   /* font-weight: bold; */
 }
 .section4-sec1-custom .icon-profile{
