@@ -38,6 +38,10 @@ a:focus,
 a:hover {
   color: #fff;
 }
+button:active,button:focus,button:hover {
+  outline: none;
+  border:none;
+}
 p, span {
   margin: 0;
   padding: 0;
@@ -261,7 +265,6 @@ header {
   font-family: Cafe24Oneprettynight;
   line-height: 2;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 .section1-main-custom .small {
   font-size: 1.0rem;
@@ -289,7 +292,7 @@ header {
   font-family: Cafe24Oneprettynight;
   line-height: 2.1em;
   font-size: 1.55rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .section1-sub2-custom .section1-sub2-name {
   margin-bottom: 1rem;
@@ -298,7 +301,7 @@ header {
 }
 .section1-sub2-custom .small {
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .section1-sub2 .small {
@@ -468,7 +471,7 @@ padding:0;
   font-family: Cafe24Oneprettynight;
   line-height: 1.5em;
   font-size: 1.3rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .section4-sec1-custom .icon-profile{
   width:1rem;
@@ -762,7 +765,7 @@ hr.cover-container::after{
 }
 
 .accountFont{
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: left;
   margin-bottom: 0.8rem;
 }
