@@ -912,10 +912,10 @@ img.is-loaded {
 }
 
 .gallery__item--7D {
-  grid-column-start: 14;
-  grid-column-end: 18;
-  grid-row-start: 7;
-  grid-row-end: 18;
+  grid-column-start: 22;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 16;
 }
 
 .gallery__item--H7 {
@@ -949,7 +949,7 @@ img.is-loaded {
 .gallery__item--HD {
   grid-column-start: 14;
   grid-column-end: 22;
-  grid-row-start: 18;
+  grid-row-start: 16;
   grid-row-end: 22;
 }
 
