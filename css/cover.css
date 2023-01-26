@@ -221,17 +221,16 @@ body {
 header {
   position: relative;
 }
-header::before{
-    position: absolute;
-    bottom: 27px;
-    left: 0;
-    content: '';
-    background: url(../img/icon/visual_02.png)no-repeat bottom;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    transform: skewY(-15deg);
+header .main-wedding-text {
+  position: absolute;
+  bottom: 27px;
+  left: 0;
+  transform: skewY(-15deg);
+}
+header .main-wedding-text img {
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -535,6 +534,7 @@ padding:0;
 
 .section5-main-custom .month-en {
   font-size: 1.3rem;
+  color: gray;
 }
 .section5-main-custom .text {
 font-size: 1.1rem;
@@ -556,6 +556,11 @@ font-size: 1.1rem;
   line-height: 1.5em;
   font-size: 1.3rem;
   font-family: Cafe24Oneprettynight;
+}
+.section5-sub-custom #d-day {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .section5-table {
@@ -683,8 +688,7 @@ font-size: 1.1rem;
 
 .section7-modal-content {
   font-family: Cafe24Oneprettynight;
-
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .section7-main {
@@ -785,7 +789,7 @@ hr.cover-container::after{
   border-radius: 0.25rem;
   background: #c4cedd;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .searchMap{
