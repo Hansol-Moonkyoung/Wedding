@@ -36,8 +36,7 @@
     <link href="css/cover.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=09d101839e321e19b0d1883c63364401"></script>
+
 
     <link href="css/gallery.css" rel="stylesheet" />
     <!-- PhotoSwipe -->
@@ -62,6 +61,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.js"
         integrity="sha512-ePtegHW811NTnZd0Er1UxtBb8dizKEdSzANYy/UhxM40FC2yCWwb1CQrj03BPbrs6XdUkcHuyVn9Xq9q0Lm34g=="
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7501c48c10613a541d5ad4f0b364edbd"></script>
     <script>
         var wow = new WOW({
             boxClass: "wow", // animated element css class (default is wow)
@@ -103,16 +103,14 @@
             var mapContainer = document.getElementById("map"), // 지도를 표시할 div
                 mapOption = {
                     center: new kakao.maps.LatLng(
-                        37.4818244545435,
-                        126.79821796093711
+                        37.513230460303966,127.03146991285989
                     ), // 지도의 중심좌표
                     level: 3, // 지도의 확대 레벨
                 };
 
             var map = new kakao.maps.Map(mapContainer, mapOption);
             var markerPosition = new kakao.maps.LatLng(
-                37.4818244545435,
-                126.79821796093711
+                37.513230460303966,127.03146991285989
             );
 
             // 마커를 생성합니다
