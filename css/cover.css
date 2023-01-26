@@ -396,18 +396,21 @@ header {
   color: #333;
   text-shadow: none;
 }
+.section4-title .row {
+justify-content: center;
+}
 
 .section4-sec1-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0.1rem;
+  padding: 0;
 }
 .section4-sec1-2.col-8 {
-  padding-right: 0;
+  padding: 0;
 }
 .section4-sec1-3.col-4 {
-  padding-left:0;
+  padding:0;
 }
 .section4-sec1-3 button + button {
   margin-left:0.5rem;
